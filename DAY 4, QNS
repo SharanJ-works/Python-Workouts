@@ -1,0 +1,38 @@
+List:
+--------
+1.Write a Python program to find the sum of all elements in a list.
+2.Write a Python program to find the number of elements in a list.
+3.Write a Python program to find the largest element in a list without using max().
+4.Write a Python program to find the smallest element in a list without using min().
+5.Write a Python program to count the number of even and odd elements in a list.
+6.Write a Python program to reverse a list without using reverse().
+7.Write a Python program to check whether a given element is present in a list.
+8.Write a Python program to Merge two lists.
+9.Separate even and odd numbers into two different lists.
+10.Find the second largest element in a list.
+
+Tuple:
+---------
+1.Count how many times an element occurs in a tuple.
+2.Reverse a tuple using slicing.
+3.Unpack a tuple containing name, age, and city.
+4.Iterate through a tuple and print all elements.
+5.Check whether an element exists in a tuple.
+6.Convert a tuple into a list and vice versa.
+
+Set:
+-----
+1.Check whether an element exists in a set.
+2.Find the union of two sets.
+3.Find the intersection of two sets.
+4.Find the difference between two sets.
+5.Find the symmetric difference.
+6.Remove duplicates from a list using sets.
+
+dict
+------
+1.Write a Python program to create a dictionary containing a student's name, age, and city, and print it.
+2.Write a Python program to add "course": "Python" to the dictionary.
+3.Write a Python program to print both keys and values using items().
+4.Write a Python program to count how many times each element occurs in a list using a dictionary.
+5.Write a Python program to create a dictionary containing numbers from 1 to 5 as keys and their squares as values.
