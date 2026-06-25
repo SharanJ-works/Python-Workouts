@@ -1,0 +1,189 @@
+1. numbers = [10, 20, 30, 40, 50]
+   print("Sum of elements:", sum(numbers))
+
+2.numbers = [10, 20, 30, 40, 50]
+print("Number of elements:", len(numbers))
+
+3. numbers = [12, 45, 7, 89, 23]
+
+largest = numbers[0]
+
+for i in numbers:
+    if i > largest:
+        largest = i
+
+print("Largest element:", largest)
+
+4.numbers = [12, 45, 7, 89, 23]
+
+smallest = numbers[0]
+
+for i in numbers:
+    if i < smallest:
+        smallest = i
+
+print("Smallest element:", smallest)
+
+5.numbers = [12, 45, 7, 89, 23, 10, 8]
+
+even_count = 0
+odd_count = 0
+
+for i in numbers:
+    if i % 2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
+
+print("Even elements:", even_count)
+print("Odd elements:", odd_count)
+
+6.numbers = [10, 20, 30, 40, 50]
+
+print("Reversed list:", numbers[::-1])
+
+7.numbers = [10, 20, 30, 40, 50]
+key = 30
+
+if key in numbers:
+    print("Element is present in the list.")
+else:
+    print("Element is not present in the list.")
+
+8.numbers = [10, 20, 30, 40, 50]
+
+print("Reversed list:", numbers[::-1])
+
+List
+
+9. Separate even and odd numbers into two different lists.
+
+a = [1, 2, 3, 4, 5, 6]
+even = []
+odd = []
+
+for i in a:
+    if i % 2 == 0:
+        even.append(i)
+    else:
+        odd.append(i)
+
+print("Even:", even)
+print("Odd:", odd)
+
+10. Find the second largest element in a list.
+
+a = [10, 20, 40, 30, 50]
+a.sort()
+print("Second Largest:", a[-2])
+Tuple
+
+1. Count how many times an element occurs in a tuple.
+
+t = (1, 2, 3, 2, 4, 2)
+print(t.count(2))
+
+2. Reverse a tuple using slicing.
+
+t = (1, 2, 3, 4)
+print(t[::-1])
+
+3. Unpack a tuple containing name, age, and city.
+
+t = ("Sharan", 20, "Coimbatore")
+name, age, city = t
+print(name, age, city)
+
+4. Iterate through a tuple and print all elements.
+
+t = (10, 20, 30)
+
+for i in t:
+    print(i)
+
+5. Check whether an element exists in a tuple.
+
+t = (1, 2, 3, 4)
+print(3 in t)
+
+6. Convert a tuple into a list and vice versa.
+
+t = (1, 2, 3)
+l = list(t)
+t = tuple(l)
+print(l)
+print(t)
+Set
+
+1. Check whether an element exists in a set.
+
+s = {1, 2, 3, 4}
+print(3 in s)
+
+2. Find the union of two sets.
+
+a = {1, 2, 3}
+b = {3, 4, 5}
+print(a | b)
+
+3. Find the intersection of two sets.
+
+a = {1, 2, 3}
+b = {3, 4, 5}
+print(a & b)
+
+4. Find the difference between two sets.
+
+a = {1, 2, 3}
+b = {3, 4, 5}
+print(a - b)
+
+5. Find the symmetric difference.
+
+a = {1, 2, 3}
+b = {3, 4, 5}
+print(a ^ b)
+
+6. Remove duplicates from a list using sets.
+
+a = [1, 2, 2, 3, 4, 4]
+print(list(set(a)))
+Dictionary
+
+1. Create a dictionary containing a student's name, age, and city.
+
+student = {"name": "Sharan", "age": 20, "city": "Coimbatore"}
+print(student)
+
+2. Add "course": "Python" to the dictionary.
+
+student = {"name": "Sharan", "age": 20}
+student["course"] = "Python"
+print(student)
+
+3. Print both keys and values using items().
+
+student = {"name": "Sharan", "age": 20}
+
+for k, v in student.items():
+    print(k, v)
+
+4. Count how many times each element occurs in a list using a dictionary.
+
+a = [1, 2, 2, 3, 1, 2]
+d = {}
+
+for i in a:
+    d[i] = d.get(i, 0) + 1
+
+print(d)
+
+5. Create a dictionary containing numbers from 1 to 5 as keys and their squares as values.
+
+d = {}
+
+for i in range(1, 6):
+    d[i] = i * i
+
+print(d)
+
