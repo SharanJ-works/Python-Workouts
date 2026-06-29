@@ -1,0 +1,188 @@
+1. Write a program to count the number of words in a text file.
+
+sample.txt
+
+Python is easy to learn.
+Welcome to Python programming.
+
+Program
+
+file = open("sample.txt", "r")
+
+text = file.read()
+words = text.split()
+
+print("Number of words:", len(words))
+
+file.close()
+
+Output
+
+Number of words: 8
+2. Create a class Vehicle with method start(). Override it in class Car.
+class Vehicle:
+    def start(self):
+        print("Vehicle is starting")
+
+class Car(Vehicle):
+    def start(self):
+        print("Car starts with a key")
+
+v = Vehicle()
+c = Car()
+
+v.start()
+c.start()
+
+Output
+
+Vehicle is starting
+Car starts with a key
+3. Write a program with multiple except blocks (ValueError and ZeroDivisionError).
+try:
+    num1 = int(input("Enter first number: "))
+    num2 = int(input("Enter second number: "))
+
+    print("Result:", num1 / num2)
+
+except ValueError:
+    print("Please enter only numbers.")
+
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+
+Output (Example 1)
+
+Enter first number: 10
+Enter second number: 0
+Cannot divide by zero.
+
+Output (Example 2)
+
+Enter first number: abc
+Please enter only numbers.
+4. Write a program that raises a custom exception if marks are not between 0 and 100.
+class InvalidMarksError(Exception):
+    pass
+
+marks = int(input("Enter marks: "))
+
+try:
+    if marks < 0 or marks > 100:
+        raise InvalidMarksError("Marks should be between 0 and 100.")
+    else:
+        print("Valid Marks")
+
+except InvalidMarksError as e:
+    print(e)
+
+Output
+
+Enter marks: 120
+Marks should be between 0 and 100.
+5. Write a program that raises a custom exception if a user enters a negative number.
+class NegativeNumberError(Exception):
+    pass
+
+num = int(input("Enter a number: "))
+
+try:
+    if num < 0:
+        raise NegativeNumberError("Negative numbers are not allowed.")
+    else:
+        print("You entered:", num)
+
+except NegativeNumberError as e:
+    print(e)
+
+Output
+
+Enter a number: -5
+Negative numbers are not allowed.
+6. Create a class Shape with method area(). Override it in classes Rectangle and Circle.
+class Shape:
+    def area(self):
+        print("Area of Shape")
+
+class Rectangle(Shape):
+    def area(self):
+        l = 10
+        b = 5
+        print("Area of Rectangle:", l * b)
+
+class Circle(Shape):
+    def area(self):
+        r = 7
+        print("Area of Circle:", 3.14 * r * r)
+
+r = Rectangle()
+c = Circle()
+
+r.area()
+c.area()
+
+Output
+
+Area of Rectangle: 50
+Area of Circle: 153.86
+7. Write a program to count the number of vowels in a text file.
+
+sample.txt
+
+Python Programming
+
+Program
+
+file = open("sample.txt", "r")
+
+text = file.read().lower()
+
+count = 0
+
+for ch in text:
+    if ch in "aeiou":
+        count += 1
+
+print("Number of vowels:", count)
+
+file.close()
+
+Output
+
+Number of vowels: 4
+8. Write a program to write student details into a text file from CSV file.
+
+students.csv
+
+Name,Age,Department
+Rahul,20,CSE
+Priya,21,IT
+Arun,19,ECE
+
+Program
+
+import csv
+
+csv_file = open("students.csv", "r")
+reader = csv.reader(csv_file)
+
+text_file = open("students.txt", "w")
+
+for row in reader:
+    text_file.write(" | ".join(row) + "\n")
+
+csv_file.close()
+text_file.close()
+
+print("Student details copied successfully.")
+
+students.txt
+
+Name | Age | Department
+Rahul | 20 | CSE
+Priya | 21 | IT
+Arun | 19 | ECE
+
+Output
+
+Student details copied successfully.
